@@ -1,0 +1,31 @@
+.link-btn{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include md-up{
+    margin: 0;
+  }
+}
+
+.btn{
+  cursor: pointer;
+  padding: 20px 25px;
+  width: 296px;
+  background: $orange;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color:  $white;
+  font-weight: 600;
+  transition: $Anim-05;
+}
+
+.btn:hover{
+  background: $orange-80;
+  color: $white;
+}
+.btn:focus, .btn:active{
+  background: $orange-120;
+  color: $white;
+}

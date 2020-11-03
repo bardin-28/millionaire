@@ -1,0 +1,63 @@
+@import "./src/utils/media-queries";
+@import "./src/utils/variables";
+@import "./src/utils/UI-Kit";
+
+
+.total_item, .total_item_active{
+  font-size: 16px;
+  padding: 6px 20px;
+  position: relative;
+  border: 1px solid $black-40;
+  max-width: 192px;
+  margin: auto;
+  margin-bottom: 8px;
+  background: $white;
+  border-radius: 20px;
+  transition: $Anim;
+
+  @include sm-up{
+    font-size: 17px;
+    padding: 8px 20px;
+  }
+  @include md-up{
+    font-size: 18px;
+  }
+  @include xl-up{
+    font-size: 20px;
+  }
+}
+
+.total_item_active, .total_item:hover {
+  border-color: $orange;
+  color: $orange;
+}
+
+.total_item:after, .total_item_active:after, {
+  position: absolute;
+  height: .5px;
+  background: $black-40;
+  content: '';
+  left: -45px;
+  top: 20px;
+  width: 45px;
+  transition: $Anim;
+}
+
+.total_item:before, .total_item_active:before{
+  position: absolute;
+  height: .5px;
+  background: $black-40;
+  content: '';
+  right: -45px;
+  top: 20px;
+  width: 45px;
+  transition: $Anim;
+}
+
+.total_item_active:after, .total_item_active:before, .total_item:hover:before, .total_item:hover:after{
+  background: $orange;
+}
+
+#completed{
+  color: $black-40;
+}

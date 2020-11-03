@@ -1,0 +1,62 @@
+@import "./src/utils/media-queries";
+@import "./src/utils/variables";
+@import "./src/utils/UI-Kit";
+
+
+.answer_item{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 18px 15px;
+  border: 1px solid $black-40;
+  max-width: 350px;
+  font-size: 18px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 8px;
+  background: $white;
+  border-radius: 20px;
+  transition: $Anim;
+  font-size: 20px;
+
+  span{
+    margin-right: 8px;
+    color: $orange;
+  }
+  @include md-up{
+    padding: 23px 32px;
+    font-size: 20px;
+  }
+  @include xl-up{
+    max-width: 392px;
+  }
+}
+
+.answer_item:hover{
+  border-color: $orange;
+}
+
+.answer_item:after{
+  position: absolute;
+  height: .5px;
+  background: $black-40;
+  content: '';
+  left: -20px;
+  top: 34px;
+  width: 20px;
+}
+
+.answer_item:before{
+  position: absolute;
+  height: .5px;
+  background: $black-40;
+  content: '';
+  right: -20px;
+  top: 34px;
+  width: 20px;
+}
+
+.answer_item:hover:before, .answer_item:hover:after{
+  background-color: $orange;;
+}

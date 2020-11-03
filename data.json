@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "How old your elder brother was 10 years before you was born, mate?",
+      "answers": [{"10 years":true}, {"11 years":false},{"12 years":false},{"14 years":false}],
+      "total": 500
+    },
+    {
+      "id": 2,
+      "question": "Tesla company owner is?",
+      "answers": [{"Bill Gates":false}, {"Brad Smith":false},{"Elon Mask":true},{"Paul Allen":false}],
+      "total": 1000
+    },
+    {
+      "id": 3,
+      "question": "What is the name of the largest technology company in South Korea?",
+      "answers": [{"Microsoft":false}, {"Samsung":true},{"Toyota":false},{"Apple":false}],
+      "total": 2000
+    },
+    {
+      "id": 4,
+      "question": "Who Invented the Gramophone?",
+      "answers": [{"Adolf Gitler":false}, {"Emil Berliner":true},{"Freddie Mercury":false},{"Joseph Priestley":false}],
+      "total": 4000
+    },
+    {
+      "id": 5,
+      "question": "Where were the first computer animations created?",
+      "answers": [{"Bill Evans laboratory":false}, {"At Nintendo company":false},{"At Microsoft company":false},{"Rutherford Appleton laboratory":true}],
+      "total": 8000
+    },
+    {
+      "id": 6,
+      "question": "In what year did the Beatles first go to the USA?",
+      "answers": [{"1964":true}, {"1961":false},{"1959":false},{"1966":false}],
+      "total": 16000
+    },
+    {
+      "id": 7,
+      "question": "Who ran West Ham United between 2008 and 2010?",
+      "answers": [{"Hakim Ziyech":false}, {"Jadon Sancho":false},{"Gianfranco Zola":true},{"Dusan Tadic":false}],
+      "total": 32000
+    },
+    {
+      "id": 8,
+      "question": "What nationality was the artist Henri Matisse?",
+      "answers": [{"French":true}, {"Italian":false},{"Japanese":false},{"Russian":false}],
+      "total": 64000
+    },
+    {
+      "id": 9,
+      "question": "What is the name of Diffwolf Jon Snow?",
+      "answers": [{"Shadow":false}, {"Ghost":true},{"Wind":false},{"Soul":false}],
+      "total": 125000
+    },
+    {
+      "id": 10,
+      "question": "Which US President wrote his own story about Sherlock Holmes?",
+      "answers": [{"John F. Kennedy":false}, {"Ronald Reagan":false},{"Franklin Roosevelt":true},{"Donald Trump":false}],
+      "total": 250000
+    },
+    {
+      "id": 11,
+      "question": "Which of these countries does the Czech Republic not border on?",
+      "answers": [{"Germany":false}, {"Poland":false},{"Austria":false},{"Hungary":true}],
+      "total": 500000
+    },
+    {
+      "id": 12,
+      "question": "Who Invented the Canning Tin Can in 1810?",
+      "answers": [{"Christian Keist":false}, {"Lewis Collins":false},{"Robert Peel":true},{"Peter Durand":false}],
+      "total": 1000000
+    }
+  ]
+}

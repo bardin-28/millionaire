@@ -1,0 +1,122 @@
+@import "./src/utils/media-queries";
+@import "./src/utils/variables";
+@import "./src/utils/UI-Kit";
+
+.question_content{
+  min-height: 100vh;
+  background: $black-05;
+}
+
+.question_title{
+  padding-top: 13vh;
+  max-width: 624px;
+  font-size: 25px;
+  font-weight: 600;
+
+  @include md-up{
+    font-size: 32px;
+  }
+}
+
+
+.question_aside.active{
+  background: $white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  min-width: 100vw;
+
+  .total_list{
+    display: block;
+  }
+  @include lg-up{
+    min-width: 376px;
+  }
+}
+
+.menu_btn{
+  display: none;
+}
+
+.question_aside{
+  .total_list{
+    display: none;
+
+    @include lg-up{
+      display: block;
+    }
+  }
+  @include lg-up{
+    background: $white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    min-width: 100vw;
+  }
+  @include lg-up{
+    min-width: 376px;
+  }
+}
+
+.total_list{
+  text-align: center;
+  padding-top: 10vh;
+
+  @include md-up{
+    padding-top: 5vh;
+  }
+  @include tablet-lg-up{
+    padding-top: 2vh;
+  }
+  @include lg-up{
+    padding-top: 5vh;
+  }
+  @include xl-up{
+    padding-top: 13vh;
+  }
+}
+.question_answers{
+  margin-top: 13vh;
+}
+
+.question_answers>div {
+  bottom: 40px;
+  margin-top: 53vh;
+  width: 100%;
+  display: inline;
+  margin: 0 auto;
+  justify-content: space-around;
+
+  &>button{
+    max-width: 390px;
+    width: 100%;
+    margin-top: 32px;
+  }
+  @include md-up{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 745px;
+  }
+  @include xl-up{
+    width: 850px;
+  }
+}
+
+.questions_menu{
+
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+
+  img{
+    height: 30px;
+    width: 40px;
+  }
+  @include lg-up{
+    display: none;
+  }
+}

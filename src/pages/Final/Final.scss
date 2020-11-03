@@ -1,0 +1,80 @@
+@import "./src/utils/media-queries";
+@import "./src/utils/variables";
+@import "./src/utils/UI-Kit";
+
+.final_content{
+  min-height: 100vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(120deg, rgba(255,255,255,1) 50%, rgba(255,243,235,1) 50%);
+
+  @include sm-up{
+    background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(255,243,235,1) 50%);
+  }
+  @include md-up{
+    background: linear-gradient(144deg, rgba(255,255,255,1) 50%, rgba(255,243,235,1) 50%);
+  }
+  @include tablet-lg-up{
+    background: linear-gradient(149deg, rgba(255,255,255,1) 50%, rgba(255,243,235,1) 50%);
+  }
+  @include lg-up{
+    background: linear-gradient(155deg, rgba(255,255,255,1) 50%, rgba(255,243,235,1) 50%);
+  }
+}
+
+.final_container{
+  max-width: 1200px;
+  padding-top: 13vh;
+
+  @include md-up{
+    padding-top: 25vh;
+    display: flex;
+  }
+}
+
+.final_hand, .final_caption{
+  width: 100%;
+
+  @include md-up{
+    width: 50%;
+  }
+}
+
+.final_hand{
+  text-align: center;
+  img{
+    max-width: 296px;
+
+    @include md-up{
+      max-width: 450px;
+    }
+  }
+}
+
+.final_subtitle{
+  text-align: center;
+  font-size: 18px;
+
+  margin-top: 30px;
+
+  color: $black-40;
+
+  @include md-up{
+    margin-top: 60px;
+    text-align: left;
+    font-size: 32px;
+  }
+}
+
+.final_title{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 64px;
+
+  @include md-up{
+    text-align: left;
+  }
+  @include tablet-lg-up{
+    font-size: 56px;
+  }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@import "utils/reset";
+@import "utils/media-queries";
+@import "utils/variables";
+@import "utils/UI-Kit";
+
+body{
+  overflow: hidden;
+}
+
+.App{
+  min-height: 100vh;
+  font-family: $mainFont;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.container{
+  margin: auto;
+  padding: 0 15px;
+
+  @include sm-up{
+    max-width: 576px;
+  }
+  @include md-up{
+    max-width: 768px;
+  }
+  @include tablet-lg-up{
+    max-width: 992px;
+  }
+  @include lg-up{
+    max-width: 1200px;
+  }
+  @include xl-up{
+    max-width: 1310px;
+  }
+}
